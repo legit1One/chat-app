@@ -51,7 +51,7 @@ function sendMessage() {
     border: none;
     color: #27AE60;
     background: transparent;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
