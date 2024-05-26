@@ -1,0 +1,50 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --chat-message-bg: #F4F4F7;
+    --chat-messages-bg: #FAFAFA;
+    --chat-header-bg: #fff;
+    --chat-input-bg: #fff;
+    --primary-color: #000;
+}
+
+html {
+    color: var(--primary-color)
+}
+
+html.green {
+    --primary-color: #fff;
+    --chat-message-bg: #047857;
+    --chat-messages-bg: #34D399;
+    --chat-header-bg: #115E59;
+    --chat-input-bg: #115E59;
+}
+
+html.blue {
+    --primary-color: #fff;
+    --chat-message-bg: #1D4ED8;
+    --chat-messages-bg: #60A5FA;
+    --chat-header-bg: #1E3A8A;
+    --chat-input-bg: #1E3A8A;
+}
+
+html.red {
+    --primary-color: #fff;
+    --chat-message-bg: #DC2626;
+    --chat-messages-bg: #F87171;
+    --chat-header-bg: #7F1D1D;
+    --chat-input-bg: #7F1D1D;
+}
+
+html.purple {
+    --primary-color: #fff;
+    --chat-message-bg: #9333EA;
+    --chat-messages-bg: #C084FC;
+    --chat-header-bg: #581C87;
+    --chat-input-bg: #581C87;
+}
