@@ -14,11 +14,11 @@ const messages = ref([])
 let socket = new WebSocket('wss://echo.websocket.org/');
 
 function sendMessage (value, type) {
-  socket.send(JSON.stringify({ value, type }))
-
   if(type === WS_MESSAGE_TYPE.CHAT) {
     messages.value.push({ text: value })
-  }
+  } else if(value === theme.value) return
+
+  socket.send(JSON.stringify({ value, type }))
 }
 
 onBeforeMount(() => {
