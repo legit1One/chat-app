@@ -2,6 +2,7 @@
   <div class="form">
     <input class="form__input"
            v-model="message"
+           @keydown.enter="sendMessage"
            type="text"
            placeholder="Write a message">
     <button class="form__action"
@@ -21,6 +22,8 @@ const emit = defineEmits(['send'])
 const message = ref('')
 
 function sendMessage() {
+  if(message.value.length === 0) return
+
   emit('send', message.value)
   message.value = ''
 }
